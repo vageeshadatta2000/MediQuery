@@ -20,7 +20,8 @@ An advanced conversational healthcare assistant built using **Meta's LLaMA 2–7
 
 ```plaintext
 👤 User: What are the symptoms of iron deficiency?
-🩺 Bot: Common symptoms of iron deficiency include fatigue, pale skin, shortness of breath, and dizziness. These symptoms result from reduced oxygen delivery to tissues due to low hemoglobin levels.
+🩺 Bot: Common symptoms of iron deficiency include fatigue, pale skin, shortness of breath, and dizziness.
+These symptoms result from reduced oxygen delivery to tissues due to low hemoglobin levels.
 
 
 📁 Project Structure
