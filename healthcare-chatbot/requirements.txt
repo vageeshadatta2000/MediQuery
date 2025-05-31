@@ -1,0 +1,9 @@
+streamlit
+langchain
+sentence-transformers
+faiss-cpu
+torch
+transformers
+python-dotenv
+scikit-learn
+tqdm
