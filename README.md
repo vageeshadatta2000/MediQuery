@@ -1,4 +1,4 @@
-# 🩺 Instruction-Tuned Healthcare Chatbot with RAG using LLaMA 2–7B
+# 🩺 MediQuery:Instruction-Tuned Healthcare Chatbot
 
 An advanced conversational healthcare assistant built using **Meta's LLaMA 2–7B**, enhanced with **Retrieval-Augmented Generation (RAG)**, **reranking**, **contextual compression**, and **conversational memory**. This chatbot provides medically relevant, instruction-following responses grounded in a vectorized medical knowledge base.
 
