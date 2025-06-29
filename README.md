@@ -12,6 +12,13 @@ MediQuery is a sophisticated conversational AI designed to provide clear, source
 
 ---
 
+**[➡️ Try the Live Demo Here!](https://medi-query-eta.vercel.app)**
+
+<img width="1509" alt="Screenshot" src="https://github.com/user-attachments/assets/173d45c4-24b4-43f1-9272-c70544ea7b76" />
+
+
+
+
 ## Features
 
 *   **Conversational Interface:** An intuitive chat-based UI for asking health-related questions.
