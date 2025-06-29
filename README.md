@@ -1,69 +1,64 @@
+# MediQuery
 
-# 🩺 MediQuery: AI Healthcare Chatbot
+> An AI-powered health information assistant.
 
-An advanced conversational healthcare assistant built with a powerful Large Language Model, enhanced with real-time web search for Retrieval-Augmented Generation (RAG). This chatbot provides medically relevant, instruction-following responses grounded in verifiable, up-to-date sources.
-
----
-
-## 🚀 Features
-
--   🧠 **Instruction-Tuned AI Core**: Utilizes a sophisticated large language model fine-tuned with specific system instructions to ensure accurate, safe, and coherent responses in the healthcare domain.
--   🌐 **Dynamic RAG Pipeline**: Employs a real-time Retrieval-Augmented Generation (RAG) pipeline using live web search. This grounds answers in the latest information, ensuring responses are verifiable and up-to-date.
--   🔗 **Source Citation**: Automatically cites sources for its generated answers, providing users with links to the web pages used to formulate the response, enhancing trust and transparency.
--   💬 **Conversational Memory**: Maintains context across turns in a single session, allowing for natural, follow-up conversations.
--   🛡️ **Built-in Safety Guardrails**: Includes a critical disclaimer in its instructions, reminding users that it is an AI assistant and not a substitute for professional medical advice.
--   ✨ **Modern & Responsive UI**: A clean, interactive, and fully responsive user interface built with React and Tailwind CSS, offering a seamless experience on any device.
--   ⚙️ **Secure API Key Handling**: Designed to securely use an API key from environment variables, preventing exposure on the client-side. The UI gracefully handles a missing key by disabling input.
+MediQuery is a sophisticated conversational AI designed to provide clear, sourced information on medical topics, symptoms, and wellness. It features a clean, responsive interface that feels like chatting with a medical expert, ensuring users can get information quickly and intuitively.
 
 ---
 
-## 🧪 Example Interaction
+### 🚨 Important Disclaimer
 
-```plaintext
-👤 User: What are the symptoms of iron deficiency?
-
-🩺 Bot: Common symptoms of iron deficiency include fatigue, pale skin, shortness of breath, and dizziness. These symptoms result from reduced oxygen delivery to tissues due to low hemoglobin levels. 
-
-Please remember, I am an AI assistant and not a medical professional. Always consult with a qualified healthcare professional for any medical advice or diagnosis.
-
-Sources:
-1. Iron-Deficiency Anemia - mayoclinic.org
-2. Iron Deficiency Anemia - National Heart, Lung, and Blood Institute (NHLBI)
-```
+**MediQuery is an AI assistant, not a medical professional.** The information provided is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
 
 ---
 
-## 💡 Technology Stack
+## Features
 
--   **Frontend**: React, TypeScript, Tailwind CSS
--   **AI & Backend**: Powered by a state-of-the-art Large Language Model with integrated web search capabilities.
--   **Core Libraries**: `@google/genai` (as the client for the LLM), React Hooks for state management.
+*   **Conversational Interface:** An intuitive chat-based UI for asking health-related questions.
+*   **Sourced Information:** Answers are grounded in up-to-date information from web sources, which are cited directly in the chat.
+*   **Comprehensive Topics:** Get information on conditions, symptoms, treatments, medications, and general wellness.
+*   **Safety First:** The AI is designed with safety as a priority, including a mandatory disclaimer on all responses.
+*   **Responsive Design:** A clean, modern, and fully responsive layout that works beautifully on desktop and mobile devices.
+*   **Clear Guidance:** An info panel clearly outlines the assistant's capabilities and limitations.
 
----
+## Tech Stack
 
-## 📁 Project Structure
+*   **Frontend:** [React](https://react.dev/) & [TypeScript](https://www.typescriptlang.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **AI:** Powered by a powerful large-scale conversational AI model.
+*   **Data Retrieval:** Utilizes a built-in web search capability to provide up-to-date, Retrieval-Augmented Generation (RAG) responses.
 
-```
-.
-├── index.html          # Main HTML entry point with Tailwind CSS
-├── index.tsx           # React application root
-├── App.tsx             # Main application layout component
-├── metadata.json       # Application metadata
-├── README.md           # This readme file
-├── types.ts            # Shared TypeScript type definitions (Message, Source)
-└── components/
-    ├── Chat.tsx        # Core chat UI, state management, and API logic
-    └── Icons.tsx       # Reusable SVG icon components for the UI
-```
+## Getting Started
 
----
+This project is a client-side application built without a complex build setup. It can be run locally with a simple web server.
 
-## 🛠️ Setup and Usage
+### Prerequisites
 
-To run this application, you must provide an API key for the underlying AI service.
+*   A modern web browser.
+*   A way to serve static files. If you have Node.js installed, you can use `serve`.
 
-1.  **Obtain an API Key** from the AI service provider.
-2.  **Set Environment Variable**: This key must be set as an environment variable named `API_KEY` in your deployment environment.
-3.  **Run the Application**: Once the `API_KEY` is configured, the application will be fully functional.
+### Configuration
 
-The application is designed to not function without this key to ensure security and proper operation. An error message will be displayed in the UI if the key is not detected.
+The application requires an API key from the AI service provider to function.
+
+1.  **Obtain an API Key:** Get an API key from the provider that powers the underlying language model.
+2.  **Set Environment Variable:** The application's code expects the key to be available as an environment variable named `API_KEY`. You must configure this in the environment where you deploy or run the application. Without this key, the chat interface will be disabled.
+
+### Running Locally
+
+1.  **Download the Files:** Place all the project files (`index.html`, `index.tsx`, `components/`, etc.) into a single directory on your computer.
+
+2.  **Start a Local Server:** Open your terminal, navigate to the project directory, and run one of the following commands:
+
+    *   **Using the Node.js `serve` package:**
+        ```bash
+        npx serve
+        ```
+
+    *   **Using Python:**
+        ```bash
+        # For Python 3
+        python3 -m http.server
+        ```
+
+3.  **Open in Browser:** The command will output a local URL (e.g., `http://localhost:3000` or `http://localhost:8000`). Open this URL in your web browser to use MediQuery.

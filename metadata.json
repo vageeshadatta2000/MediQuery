@@ -1,0 +1,7 @@
+
+{
+  "name": "MediQuery",
+  "description": "An AI-powered health information assistant. MediQuery provides clear, sourced information on medical topics, symptoms, and wellness, but is not a substitute for professional medical advice.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
