@@ -1,5 +1,0 @@
-{
-  "name": "MediQuery: AI Healthcare Chatbot",
-  "description": "An advanced conversational healthcare assistant providing medically relevant responses grounded in verifiable sources using the Gemini API.",
-  "requestFramePermissions": []
-}
